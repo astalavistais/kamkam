@@ -39,15 +39,15 @@
     ></script>
   </head>
   <body>
-    <header class="header--section" id="home">
+    <header class="header--section">
       <div class="header--logo--box">
         <img src="images/3.jpg" alt="" class="imglogo" />
         <h1 class="header--title">TREEHOUSE</h1>
       </div>
 
       <nav class="nav-box">
-        <ul class="nav__ul">
-          <li class="nav__li"><a class="nav__a" href="#home">home</a></li>
+        <ul class="nav__ul--horizontal">
+          <li class="nav__li"><a class="nav__a" href="#hero">home</a></li>
           <li class="nav__li"><a class="nav__a" href="#about">about</a></li>
           <li class="nav__li"><a class="nav__a" href="#blog">blog</a></li>
           <li class="nav__li"><a class="nav__a" href="#portfolio">portfolio</a></li>
@@ -58,9 +58,16 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
+        <ul class="nav__ul--vertical">
+          <li class="nav__li"><a class="nav__a" href="#hero">home</a></li>
+          <li class="nav__li"><a class="nav__a" href="#about">about</a></li>
+          <li class="nav__li"><a class="nav__a" href="#blog">blog</a></li>
+          <li class="nav__li"><a class="nav__a" href="#portfolio">portfolio</a></li>
+          <li class="nav__li"><a class="nav__a" href="#contact">contact</a></li>
+        </ul>  
       </nav>
     </header>
-    <section class="hero--section">
+    <section class="hero--section" id="#hero">
       <h3 class="hero--title">
         CREATIVE DIGITAL 
         <span class="hero-span-2"> SOLUTIONS</span>
@@ -68,7 +75,7 @@
       <p class="hero-description">Proiniaculis purus consequat sem cure.</p>
       <a href="#" class="hero--btn hero--btn--color">VIEW PORTFOLIO</a>
     </section>
-    <section class="container-services" id="about">
+    <section class="container-services">
       <div class="container-services">
         <h3 class="heading-title">PROFESSIONAL SERVICES</h3>
         <p class="subheading-text">Proin iaculis purus consequat sem cure</p>
@@ -114,7 +121,7 @@
         </div>
       </div>
     </section>
-    <section class="container-grid pin-wheel-width" href="blog">
+    <section class="container-grid pin-wheel-width" id="about">
       <img src="pinwheel.jpg" alt="pinwheel" class="pinwheel" />
       <div class="pinwheel2">
         <div class="hero--extra--spacing--400px relax-text-box">
@@ -147,7 +154,7 @@
       <h2 class="title-headary">LATEST PROJECT</h2>
       <p class="description-area">Lorem ipsum dolor sit, amet consectetur</p>
     </div>
-    <section class="project-area-flex-develop" id="portfolio">
+    <section class="project-area-flex-develop" id="blog">
       <div class="flex-dev">
         <div class="headary-title-dev">
           <h2 divclass="title-dev">DEVELOPING FRAMEWORK</h2>
@@ -197,7 +204,7 @@
         />
       </div>
     </section>
-    <section class="section-cul" >
+    <section class="section-cul" id="portfolio">
       <div class="margin-bot-midlle container-flex-center">
         <h2 class="heading-cul">CULTURE & VALUES</h2>
         <p class="subheading-cul">Lorem ipsum dolor sit amet consectetur.</p>
@@ -223,10 +230,11 @@
         </li>
         <li class="elem-cul">
           <i class="fa fa-star-o icon1"></i>
-          <h3 class="title-cul">DELIVER EXCELENCE</h3>
+          <h3 class="title-cul">WORK-LIFE BALANCE</h3>
           <p class="description-cul">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,
             eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            . Iste, sequi. 
           </p>
         </li>
       </ul>
@@ -276,10 +284,15 @@
       <button class="contact-us">CONTACT US</button>
     </section>
     <section class="companies">
-      <img class="logos1" src="logos/projekt phothopea.jpg" alt="envato" />
-      <img class="logos1" src="logos/worldpress.jpg" alt="worldpress" />
-      <img class="logos1" src="logos/cuts.jpg" alt="tuts" />
-      <img class="logos1" src="logos/micro.jpg" alt="micro" />
+      <div class="slide-wrap">
+      <img href="slide-1" class="logos1" src="logos/projekt-phothopea.jpg" alt="envato" />
+      <img href="slide-2" class="logos1" src="logos/worldpress.jpg" alt="worldpress" />
+      <img href="slide-3" class="logos1" src="logos/cuts.jpg" alt="tuts" />
+      <img href="slide-4" class="logos1" src="logos/micro.jpg" alt="micro" />
+      </div>
+      <div class="slider">
+        <img class="slide1" id="slide-1" src="logos/worldpress.jpg" alt="worldpress" />
+      </div>
     </section>
     <section class="Aboutus" id="contact">
       <div class="Aboutus--general--flex">
@@ -353,8 +366,8 @@
         </div>
       </div>
     </section>
-    <section class="footer-element">
-      <footer class="footer-grid">
+    <section class="footer-grid">
+      <footer class="footer-flex">
         <p class="footer-p">&copy Copyright 2014 FreebiesXpress.com</p>
         <div class="footer-ico">
           <i class="fa-brands fa-twitter footer-ico-twit"></i>

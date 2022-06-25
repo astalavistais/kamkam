@@ -1,0 +1,588 @@
+/* rem i em nie zależą od rozmiaru czcionki html w zapytaniach o media czyli  nalezy dzielić dana rozdzielczosc przez 16 px !*/
+
+/**********************/
+/* BELOW 1566 */
+/**********************/
+
+@media (max-width: 97.875em) {
+  .elem-cul:not(:last-of-type)::before {
+    display: none;
+  }
+}
+
+/* /1100px */
+@media (max-width: 70em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid--3--col {
+    display: flex;
+    /* flex-wrap: nowrap; */
+  }
+
+  .extra-description,
+  .hero-title {
+    white-space: nowrap;
+  }
+}
+/* 960px */
+@media (max-width: 64em) {
+  html {
+    font-size: 52%;
+  }
+
+  .header--section {
+    max-width: 100rem;
+    gap: 40rem;
+  }
+}
+
+/* ******************* */
+/* 900px */
+/* ******************* */
+
+@media (max-width: 56em) {
+  /* *********** */
+  /* section nav */
+  /* *********** */
+
+  .header--section {
+    gap: 50rem;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  
+  .nav__ul--vertical--active{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding-right: 5rem;
+    color: black;
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    transition: 0.3s;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .nav__ul--horizontal{
+    display: none;
+  }
+  
+
+
+  .nav__li {
+    margin: 16px 0;
+  }
+
+
+  .header--logo--box {
+    padding-left: 0px;
+    max-width: 100%;
+  }
+
+  /* *********** */
+  /* proffesional services */
+  /* *********** */
+
+  .container-services {
+    max-width: 80rem;
+  }
+
+  /* *********** */
+  /* RELAX */
+  /* *********** */
+
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pinwheel {
+    display: none;
+  }
+
+  /* *********** */
+  /* LATEST PROJECT */
+  /* *********** */
+
+  .extra-description {
+    flex-wrap: wrap;
+  }
+
+  /* *********** */
+  /* CULTURE & VALUES */
+  /* *********** */
+
+  .list-cul {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .section-cul {
+    margin-bottom: 10rem;
+  }
+
+  /* *********** */
+  /* OUR AWASOME CLIENTS */
+  /* *********** */
+
+  .margin-bot-midlle {
+    margin-bottom: 6rem;
+  }
+
+  .max-width-general {
+    max-width: 80rem;
+    text-align: center;
+  }
+
+  .awasomwe-text-content-1 {
+    margin-bottom: 4rem;
+  }
+
+  /* dokonczyc sekcje awasome na 900px */
+
+  /* *********** */
+  /* 750px */
+  /* *********** */
+
+  @media (max-width: 46.875em) {
+    html {
+      font-size: 46%;
+    }
+
+    .nav__ul {
+      top: 100%;
+    }
+
+    /* latest section */
+
+    .tablet-ico {
+      width: 80%;
+    }
+
+    .awasome-section {
+      /* max-width: 80rem; */
+      text-align: center;
+    }
+
+    .awasome-small-container {
+      grid-template-columns: 1fr;
+      margin-bottom: 6rem;
+    }
+    .awasome-small-container-rev {
+      grid-template-columns: 1fr;
+    }
+
+    .awasome-text-1 {
+      max-width: 70rem;
+    }
+
+    .awasome-wheel,
+    .awasome-wheel2 {
+      display: none;
+    }
+
+    .companies {
+      max-width: 80rem;
+      margin: 0 auto;
+    }
+
+    .Aboutus--general--flex {
+      max-width: 90rem;
+      margin: 0 auto;
+    }
+
+    .btn2 {
+      padding: 2rem 3rem;
+    }
+
+    .pinwheel2 {
+      height: 85%;
+    }
+  }
+
+  /* *********** */
+  /* 650px */
+  /* *********** */
+
+  @media (max-width: 40em) {
+    /* *********** */
+    /* CULTURE & VALUES */
+    /* *********** */
+
+    .title-cul {
+      text-align: center;
+    }
+
+    .list-cul {
+      max-width: 70rem;
+    }
+
+    .footer-flex{
+      gap: 35rem;
+    }
+  }
+
+  /* *********** */
+  /* 600px */
+  /* *********** */
+
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 43%;
+    }
+
+    .headary-title-dev {
+      padding: 0 4rem;
+    }
+
+    .header--section {
+      gap: 50rem;
+    }
+
+    .nav__ul {
+      top: 100%;
+      max-width: 18%;
+    }
+  }
+
+  /* *********** */
+  /* 538px */
+  /* *********** */
+  @media (max-width: 34em) {
+    html {
+      font-size: 41%;
+    }
+
+    .companies{
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      padding: 3rem 0;
+    }
+
+    .slider{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .slide1 {
+      height: 6rem;
+      width: 20rem;
+
+    }
+
+    .slide-wrap{
+      display: none;
+    }
+
+    .nav__ul {
+      top: 100%;
+      max-width: 18%;
+    }
+
+      
+      .footer-flex{
+      gap: 20rem;
+    }
+  }
+  /* *********** */
+  /* 450px */
+  /* *********** */
+  @media (max-width: 29.375em) {
+    .headary-title-dev {
+      max-width: 46rem;
+    }
+    /* *********** */
+    /* RELAX  */
+    /* *********** */
+    .relax--media--spacing-450px {
+      margin: 5rem 10rem;
+    }
+
+    .relax-text-box {
+      white-space: wrap;
+    }
+
+    .relax__icon {
+      font-size: 4rem;
+      align-self: flex-start;
+    }
+
+    /* *********** */
+    /* CULTURE AND VALUES */
+    /* *********** */
+    .elem-cul:nth-child(1) {
+      margin-top: 4rem;
+    }
+
+    html {
+      font-size: 40%;
+    }
+
+    .flex-dev {
+      max-width: 50rem;
+    }
+
+    .title-area {
+      margin-bottom: 4rem;
+    }
+
+    .more-info {
+      margin-bottom: 6rem;
+    }
+
+    .header--section {
+      max-width: 80rem;
+      gap: 20rem;
+    }
+
+    .container-tools-3cols {
+      flex-direction: column;
+    }
+
+    .step-1 {
+      max-width: 46rem;
+      margin: 0 auto;
+    }
+
+    .img-step1 {
+      font-size: 5rem;
+    }
+
+    .step-title-01 {
+      font-size: 2.2rem;
+    }
+
+    .step-text-02 {
+      font-size: 1.8rem;
+    }
+
+    .title-area {
+      max-width: 40em;
+      margin: 0 auto;
+      margin-bottom: 11rem;
+    }
+    .project-area-flex-develop {
+      grid-template-columns: 1fr;
+    }
+
+    .big--media--spacing-450px.active {
+      margin: 5rem 11rem;
+    }
+
+    .flex-dev {
+      margin: 0 11rem;
+    }
+
+    .option-description {
+      white-space: initial;
+    }
+
+    .image-dev {
+      display: none;
+    }
+
+    /* *********** */
+    /* CULTURE & VALUES */
+    /* *********** */
+    .grid--3--col {
+      flex-direction: column;
+    }
+
+    .elem-cul {
+      max-width: 30rem;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .margin-bot-midlle {
+      margin-bottom: 11rem;
+    }
+
+    .icon1 {
+      display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 7.5rem;
+  height: 7.5rem;
+  color: #777;
+  border: 3px solid #777777;
+  border-radius: 50%;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+    }
+
+    .title-cul {
+      font-size: 2.2rem;
+    }
+
+    .description-cul {
+      font-size: 1.8rem;
+    }
+
+    .margin-bot-midlle {
+      margin-bottom: 7rem;
+    }
+
+    .awasomwe-text-content-1 {
+      max-width: 40rem;
+      margin: 0 auto;
+      font-size: 1.8rem;
+    }
+
+    .awasome-signature {
+      margin-top: 1rem;
+      top: 100%;
+      left: 15%;
+      font-size: 1.8rem;
+    }
+
+    .description-next-project {
+      margin-bottom: 0rem;
+    }
+
+    
+
+    /* *********** */
+    /* COMPANIES */
+    /* *********** */
+
+    .companies {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+
+    .logos1 {
+      display: inline-block;
+      font-size: 2rem;
+    }
+
+    /* *********** */
+    /* LAST SECTION */
+    /* *********** */
+
+    .Aboutus__contact--title {
+      display: inline-block;
+    }
+
+    .Aboutus__contact--boxes {
+      max-width: 20rem;
+    }
+
+    
+  }
+
+  /* *********** */
+  /* 400px */
+  /* *********** */
+
+  @media (max-width: 25em) {
+    html {
+      font-size: 36%;
+    }
+
+    .hero-title {
+      padding: 0 10rem;
+    }
+
+    .heading-title,
+    .headary-next-project {
+      padding: 0 2rem;
+    }
+
+    .relax-description {
+      font-size: 1.8rem;
+      margin-bottom: 4rem;
+    }
+
+    .option-description {
+      font-size: 1.8rem;
+    }
+
+    .Aboutus__contact__description {
+      font-size: 1.5rem;
+    }
+    .contact-extra-space {
+      word-break: break-all;
+    }
+
+    .Aboutus--general--flex{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 42rem;
+      font-size: 62.5%;
+    }
+
+    .Aboutus__contact--boxes {
+      max-width: 27rem;
+      font-size: 62.5%;
+    }
+
+    .Aboutus__contact--title:nth-child(1){
+      margin-top: 4rem;
+    }
+
+    .Aboutus__contact--boxes:nth-child(3){
+      margin-bottom: 4rem;
+    }
+
+    .Aboutus__contact--title{
+      font-size: 2.4rem;
+    }
+
+    .Aboutus__contact__description__span{
+      font-size: 2rem;
+    }
+
+    .Aboutus__contact__icon{
+      font-size: 3.5rem;
+    }
+
+    .Aboutus__contact--boxes {
+      padding: 0 3rem;
+    }
+
+    .footer-flex{
+      
+      gap: 5rem;
+    }
+  }
+
+  /* *********** */
+  /* 350px */
+  /* *********** */
+  
+  @media (max-width: 22em) {
+    /* *********** */
+    /* HERO SECTION */
+    /* *********** */
+    .hero--title{
+      margin: 0 auto;
+    }
+}
